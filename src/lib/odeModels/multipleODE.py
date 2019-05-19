@@ -2,14 +2,14 @@ from logs import logDecorator as lD
 import json
 
 from scipy.interpolate import interp1d
-from scipy.integrate import odeint
+# from scipy.integrate import odeint
+from autograd.scipy.integrate import odeint
 import numpy as np
 
 # from numba import jit
 
 config = json.load(open('../config/config.json'))
 logBase = config['logging']['logBase'] + '.lib.multipleODE.multipleODE'
-
 
 class multipleODE_old:
     '''[summary]

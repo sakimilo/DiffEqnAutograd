@@ -4,7 +4,7 @@ import json
 import numpy as np
 from time import time
 from datetime import datetime as dt
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 from scipy.interpolate import interp1d
 from scipy import signal
@@ -158,7 +158,7 @@ def main(logger):
     '''
 
 
-    numList     = []
+    numList     = [700, 900, 1000, 1200, 1500, 1700, 1900, 2000]
     filehandler = open('../results/odeint_performance.txt', 'a')
 
     for Npat in numList:
